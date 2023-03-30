@@ -1,0 +1,1 @@
+# istio-sync-operator
