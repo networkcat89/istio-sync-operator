@@ -1,0 +1,20 @@
+# permissions for end users to view istiogwcerts.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: istiogwcert-viewer-role
+rules:
+- apiGroups:
+  - ops.istio.southbridge.io
+  resources:
+  - istiogwcerts
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - ops.istio.southbridge.io
+  resources:
+  - istiogwcerts/status
+  verbs:
+  - get

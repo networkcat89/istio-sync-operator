@@ -1,0 +1,10 @@
+apiVersion: v2
+name: istio-sync-operator
+description: Easy syncing gateways and certificates for istio.
+type: application
+maintainers:
+  - name: Vyacheslav Lochashvili
+    email: v.lochashvili@southbridge.io
+version: 0.1.15
+
+appVersion: "1.15.0b"

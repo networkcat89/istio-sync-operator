@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: vlochashvilisouthbridge/istiogwoperator
+  pullPolicy: IfNotPresent
+  tag: "1.14"
+
+namespace: istio-sync-operator
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 768Mi
+  requests:
+    cpu: 10m
+    memory: 256Mi
