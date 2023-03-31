@@ -12,6 +12,6 @@ entries:
     name: istio-sync-operator
     type: application
     urls:
-    - https://github.com/networkcat89/istio-sync-operator/blob/gh-pages/charts/istio-sync-operator-0.1.15.tgz
+    - https://github.com/networkcat89/istio-sync-operator/raw/gh-pages/charts/istio-sync-operator-0.1.15.tgz
     version: 0.1.15
 generated: "2023-03-30T19:05:31.121595001+03:00"
