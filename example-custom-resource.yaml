@@ -1,0 +1,14 @@
+---
+apiVersion: ops.istio.southbridge.io/v1alpha1
+kind: IstioGwCert
+metadata:
+  name: sync-gw-cert-app
+spec:
+  environments:
+    - gateway: gateway-to-sync # name of your istio gateway to create
+      certificate:
+        clusterissuer: letsencrypt-prod # certmnager clusterIssuer
+      servers:
+        hosts: example.com # hostname of your app
+        credentialname: example.com-tls # certificate secret
+...
