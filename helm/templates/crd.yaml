@@ -10,7 +10,7 @@ spec:
     listKind: IstioGwCertList
     plural: istiogwcerts
     singular: istiogwcert
-  scope: Cluster
+  scope: Namespaced
   versions:
   - name: v1alpha1
     schema:
