@@ -9,7 +9,6 @@ metadata:
     app.kubernetes.io/name: rolebinding
     app.kubernetes.io/part-of: {{ .Chart.Name }}
   name: operatorsdk-leader-election-rolebinding
-  namespace: {{ .Values.namespace }}
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
@@ -17,4 +16,3 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: {{ .Chart.Name }}
-  namespace: {{ .Values.namespace }}
