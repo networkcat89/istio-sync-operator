@@ -9,7 +9,6 @@ metadata:
     app.kubernetes.io/part-of: {{ .Chart.Name }}
     app.kubernets.io/managed-by: kustomize
   name: operatorsdk-leader-election-role
-  namespace: {{ .Values.namespace }}
 rules:
 - apiGroups:
   - ""
