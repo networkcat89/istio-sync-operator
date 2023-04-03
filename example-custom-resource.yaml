@@ -5,9 +5,9 @@ metadata:
   name: sync-gw-cert-app
 spec:
   environments:
-    - gateway: gateway-to-sync # name of your istio gateway to create
-      certificate:
+    - certificate:
         clusterissuer: letsencrypt-prod # certmnager clusterIssuer
+      gateway: gateway-to-sync # name of your istio gateway to create
       servers:
         hosts: example.com # hostname of your app
         credentialname: example.com-tls # certificate secret
