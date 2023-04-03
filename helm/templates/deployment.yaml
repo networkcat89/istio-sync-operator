@@ -10,7 +10,6 @@ metadata:
     app.kubernetes.io/part-of: {{ .Chart.Name }}
     control-plane: controller-manager
   name: {{ .Chart.Name }}
-  namespace: {{ .Values.namespace }}
 spec:
   progressDeadlineSeconds: 600
   replicas: {{ .Values.replicaCount }}
