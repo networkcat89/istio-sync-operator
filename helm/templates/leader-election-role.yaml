@@ -1,3 +1,4 @@
+---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
@@ -9,6 +10,7 @@ metadata:
     app.kubernetes.io/part-of: {{ .Chart.Name }}
     app.kubernets.io/managed-by: kustomize
   name: operatorsdk-leader-election-role
+  namespace: {{ .Release.Namespace | quote }}
 rules:
 - apiGroups:
   - ""
@@ -41,3 +43,4 @@ rules:
   verbs:
   - create
   - patch
+...
