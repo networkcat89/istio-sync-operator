@@ -24,8 +24,8 @@ Let's create an application with the domain name example.com
 kubectl apply -f example-custom-resource.yaml
 ```
 
-Then the following resources will be created:
-Istio HTTPS gateway: https://example.com
-Istio HTTPS-WWW gateway with redirect to non-WWW: https://www.example.com
-Istio HTTP-WWW-non-WWW gateway with redirect to HTTPS: http://www.example.com http://example.com
-SSL Certificate
+Then the following resources will be created:  
+Istio HTTPS gateway: https://example.com  
+Istio HTTPS-WWW gateway with redirect to non-WWW: https://www.example.com  
+Istio HTTP-WWW-non-WWW gateway with redirect to HTTPS: http://www.example.com http://example.com  
+SSL Certificate  
