@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: vlochashvilisouthbridge/istiogwoperator
   pullPolicy: IfNotPresent
-  tag: "1.15"
+  tag: "1.16"
 
 namespace: istio-sync-operator
 
